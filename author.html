@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Your Name | Author | [Your City] Real Estate Agent</title>
+<meta name="description" content="Your Name is a licensed California real estate agent and writer based in [Your City]. 20+ years of marketing expertise applied to [Your Region] real estate."/>
+<link rel="canonical" href="https://yourdomain.com/author.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+
+<!-- PERSON SCHEMA — this is the author entity referenced by all blog posts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://yourdomain.com/author.html#person",
+      "name": "Your Name",
+      "givenName": "Your",
+      "familyName": "Your Name",
+      "url": "https://yourdomain.com/author.html",
+      "image": "https://yourdomain.com/your-hero-photo.jpg",
+      "description": "Licensed California real estate agent based in [Your City], serving the [Your Region] and [Your Broader Service Area]. 20+ years of marketing agency experience. Member of Your Brokerage Name.",
+      "jobTitle": "Real Estate Agent",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Your Brokerage Name",
+        "url": "https://www.yourbrokerage.com"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Real Estate License",
+        "name": "California Real Estate Salesperson License",
+        "identifier": "DRE #[Your License Number]",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "California Department of Real Estate",
+          "url": "https://www.dre.ca.gov"
+        }
+      },
+      "knowsAbout": [
+        "Residential real estate",
+        "Home buying process",
+        "Home selling strategy",
+        "Real estate marketing",
+        "Buyer representation agreements",
+        "First-time homebuyers",
+        "[Your City] real estate",
+        "[Nearby City] real estate",
+        "[Your Region] real estate",
+        "[Your Broader Service Area] real estate"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "[Your City]",
+        "addressRegion": "CA",
+        "postalCode": "[Zip Code]",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.instagram.com/yourhandle",
+        "https://www.yourbrokerage.com",
+        "https://yourdomain.com"
+      ],
+      "mainEntityOfPage": "https://yourdomain.com/author.html"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://yourdomain.com/author.html#webpage",
+      "url": "https://yourdomain.com/author.html",
+      "name": "Your Name | Author | [Your City] Real Estate Agent",
+      "isPartOf": {"@id": "https://yourdomain.com/#website"},
+      "about": {"@id": "https://yourdomain.com/author.html#person"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourdomain.com"},
+          {"@type": "ListItem", "position": 2, "name": "Info Hub", "item": "https://yourdomain.com/blog.html"},
+          {"@type": "ListItem", "position": 3, "name": "Your Name", "item": "https://yourdomain.com/author.html"}
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Your<span>Brand</span>Name</a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="buyers.html">Buyers</a></li>
+      <li><a href="sellers.html">Sellers</a></li>
+      <li><a href="blog.html">Info Hub</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-search"><a href="https://yourhomesearchlink.example.com/" target="_blank" rel="noopener">Search Homes</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Get In Touch</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="author-hero">
+    <div class="author-hero-image">
+      <!-- EDIT: Author photo -->
+      <img src="your-hero-photo.jpg" alt="Your Name, [Your City] real estate agent and writer"/>
+    </div>
+    <div class="author-hero-content">
+      <p class="eyebrow">About the Author</p>
+      <!-- EDIT: Author name -->
+      <h1>Your Name</h1>
+      <!-- EDIT: Author title line -->
+      <p class="author-title">Licensed CA Real Estate Agent &nbsp;|&nbsp; [Your State] DRE #[Your License Number] &nbsp;|&nbsp; Your Brokerage Name</p>
+      <!-- EDIT: Author bio paragraphs -->
+      <p>I'm a licensed real estate agent based in [Your City], serving the [Your Region], [Nearby City], [Your Broader Service Area], and beyond. Before real estate, I spent more than 20 years leading marketing strategy for agencies and brands, work that taught me how to reach the right audience, tell a compelling story, and execute under pressure.</p>
+      <p>I write about real estate the way I practice it: plainly, honestly, and with real respect for how much is at stake in a home transaction. Every article on this site is written from experience, not filler.</p>
+      <p>I'm part of <a href="https://www.yourbrokerage.com" target="_blank" rel="noopener" class="inline-link">Your Brokerage Name</a>, and I bring the full resources of that team to every client I work with.</p>
+      <div class="author-links">
+        <a class="btn-ink" href="contact.html">Work With Me</a>
+        <a class="btn-ghost" href="blog.html">Read the Info Hub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="author-expertise">
+    <div class="author-expertise-inner">
+      <div class="section-header">
+        <h2>Areas of expertise</h2>
+        <span>What I write about</span>
+      </div>
+      <div class="expertise-grid">
+        <!-- EDIT: Expertise cards -->
+        <div class="expertise-card">
+          <h3>Buying a home</h3>
+          <p>The full process from pre-approval through close, including the new Buyer-Broker Representation Agreement requirements, offer strategy, and escrow navigation.</p>
+        </div>
+        <div class="expertise-card">
+          <h3>Selling with strategy</h3>
+          <p>How to position, price, and present a home to attract serious buyers. Informed by 20+ years of professional marketing experience.</p>
+        </div>
+        <div class="expertise-card">
+          <h3>First-time buyers</h3>
+          <p>Clear, jargon-free guidance for buyers who are navigating the process for the first time. What to expect, what to ask, and what to watch out for.</p>
+        </div>
+        <div class="expertise-card">
+          <h3>[Your Region] market</h3>
+          <p>[Your City], [Nearby City], and the broader [Your Region] market: what's driving values, where the opportunities are, and how to read the data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p class="foot-logo">Your Brand Name</p>
+    <nav class="foot-nav">
+      <a href="buyers.html">Buyers</a>
+      <a href="sellers.html">Sellers</a>
+      <a href="blog.html">Info Hub</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="author.html">About the Author</a>
+      <a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener">@YourBrandName</a>
+      <a href="https://www.yourbrokerage.com" target="_blank" rel="noopener">Your Brokerage Name</a>
+    </nav>
+    <p class="foot-dre">Your Name &nbsp;|&nbsp; [Your State] DRE #[Your License Number] &nbsp;|&nbsp; Your Brokerage &nbsp;|&nbsp; Equal Housing Opportunity &nbsp;|&nbsp; &copy; 2026</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
