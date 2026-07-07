@@ -1,14 +1,15 @@
 /* ============================================================
-   YOUR BRAND NAME — styles.css
-   
-   COLOR REFERENCE (if you want to change colors):
-   --ink:          #1C1C1A  (dark text, buttons)
-   --ink-muted:    #6B6860  (secondary text)
-   --terracotta:   #B5532A  (accent color — links, highlights)
-   --terra-light:  #F0E4DC  (light terracotta background)
-   --cream:        #F7F4EF  (section backgrounds)
-   --warm-white:   #FDFCFA  (page background)
-   --border:       #E2DDD6  (dividing lines)
+   BRIAN GRUSHKIN — styles.css
+
+   COLOR REFERENCE (light mid-century modern palette):
+   --ink:          #2B2620  (dark walnut text, dark button fill)
+   --ink-muted:    #6E6354  (secondary text)
+   --terracotta:   #C1752E  (warm accent — mustard / burnt orange)
+   --terra-light:  #F1E1C2  (light warm-tan panel background)
+   --cream:        #EFE6D3  (alternate section background, warm sand)
+   --warm-white:   #FAF5EA  (page background, light cream)
+   --border:       #E1D4B8  (dividing lines)
+   --teal:         #2F6E80  (cool accent — deep teal blue)
    ============================================================ */
 
 *, *::before, *::after {
@@ -18,13 +19,14 @@
 }
 
 :root {
-  --ink:          #1C1C1A;
-  --ink-muted:    #6B6860;
-  --terracotta:   #B5532A;
-  --terra-light:  #F0E4DC;
-  --cream:        #F7F4EF;
-  --warm-white:   #FDFCFA;
-  --border:       #E2DDD6;
+  --ink:          #2B2620;
+  --ink-muted:    #6E6354;
+  --terracotta:   #C1752E;
+  --terra-light:  #F1E1C2;
+  --cream:        #EFE6D3;
+  --warm-white:   #FAF5EA;
+  --border:       #E1D4B8;
+  --teal:         #2F6E80;
   --nav-h:        62px;
 }
 
@@ -52,26 +54,26 @@ a { color: inherit; text-decoration: none; }
 /* ── TYPOGRAPHY ── */
 
 h1 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Jost', sans-serif;
   font-size: clamp(2.6rem, 5vw, 4.2rem);
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.08;
   letter-spacing: -0.01em;
   color: var(--ink);
 }
 
 h2 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Jost', sans-serif;
   font-size: clamp(1.8rem, 3vw, 2.8rem);
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.15;
   color: var(--ink);
 }
 
 h3 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Jost', sans-serif;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--ink);
   margin-bottom: 0.5rem;
 }
@@ -134,7 +136,7 @@ em { font-style: italic; color: var(--terracotta); }
 
 .btn-white {
   display: inline-block;
-  background: #fff;
+  background: var(--warm-white);
   color: var(--terracotta);
   border: none;
   padding: 0.85rem 2.25rem;
@@ -163,7 +165,7 @@ em { font-style: italic; color: var(--terracotta); }
   position: sticky;
   top: 0;
   z-index: 200;
-  background: rgba(253, 252, 250, 0.97);
+  background: rgba(250, 245, 234, 0.94);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -213,13 +215,13 @@ em { font-style: italic; color: var(--terracotta); }
 .nav-links a.active { color: var(--terracotta); }
 
 .nav-search a {
-  background: var(--terracotta);
+  background: var(--teal);
   color: #fff !important;
   padding: 0.4rem 0.9rem;
   transition: background 0.18s !important;
 }
 
-.nav-search a:hover { background: #9c4422 !important; }
+.nav-search a:hover { background: #2A4F68 !important; }
 
 .nav-cta {
   flex-shrink: 0;
@@ -261,7 +263,7 @@ em { font-style: italic; color: var(--terracotta); }
 .photo-placeholder {
   position: absolute;
   inset: 0;
-  background: #DDD5C8;
+  background: #E4D8BE;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,7 +277,7 @@ em { font-style: italic; color: var(--terracotta); }
   font-size: 0.65rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(80, 65, 50, 0.5);
+  color: rgba(78, 63, 45, 0.5);
   display: block;
 }
 
@@ -283,7 +285,7 @@ em { font-style: italic; color: var(--terracotta); }
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.95rem;
   font-style: italic;
-  color: rgba(80, 65, 50, 0.6);
+  color: rgba(78, 63, 45, 0.6);
   line-height: 1.5;
   max-width: 240px;
   display: block;
@@ -325,10 +327,10 @@ em { font-style: italic; color: var(--terracotta); }
 .hero-caption {
   position: relative;
   z-index: 2;
-  background: rgba(253, 252, 250, 0.93);
+  background: rgba(250, 245, 234, 0.93);
   backdrop-filter: blur(4px);
   padding: 1.25rem;
-  border-left: 3px solid var(--terracotta);
+  border-left: 3px solid var(--teal);
   max-width: 280px;
   display: flex;
   flex-direction: column;
@@ -339,7 +341,7 @@ em { font-style: italic; color: var(--terracotta); }
   font-size: 0.65rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--terracotta);
+  color: var(--teal);
 }
 
 .caption-text {
@@ -454,7 +456,7 @@ em { font-style: italic; color: var(--terracotta); }
   border-right: 1px solid var(--border);
 }
 
-.about-ph { position: absolute; inset: 0; background: #DCCEC6; }
+.about-ph { position: absolute; inset: 0; background: #DCC9A0; }
 
 .about-content {
   padding: 4rem 3rem;
@@ -480,7 +482,7 @@ em { font-style: italic; color: var(--terracotta); }
   font-size: 0.68rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(250, 245, 234, 0.35);
   margin-bottom: 2.5rem;
   display: block;
 }
@@ -492,7 +494,7 @@ em { font-style: italic; color: var(--terracotta); }
 }
 
 .testimonial {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(250, 245, 234, 0.12);
   padding-top: 1.75rem;
 }
 
@@ -501,7 +503,7 @@ em { font-style: italic; color: var(--terracotta); }
   font-size: 1.2rem;
   font-style: italic;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(250, 245, 234, 0.85);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -630,7 +632,7 @@ em { font-style: italic; color: var(--terracotta); }
 /* ── BUYERS — SEARCH BANNER ── */
 
 .search-banner {
-  background: var(--terracotta);
+  background: var(--teal);
   padding: 3rem 2.5rem;
   text-align: center;
   display: flex;
