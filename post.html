@@ -33,20 +33,20 @@
 
 <nav id="nav">
   <div class="nav-inner">
-    <a class="logo" href="index.html">LA<span>Based</span>Agent</a>
+    <a class="logo" href="/index.html">LA<span>Based</span>Agent</a>
     <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="buyers.html">Buyers</a></li>
-      <li><a href="sellers.html">Sellers</a></li>
-      <li><a href="blog.html" class="active">Info Hub</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/buyers.html">Buyers</a></li>
+      <li><a href="/sellers.html">Sellers</a></li>
+      <li><a href="/blog.html" class="active">Info Hub</a></li>
+      <li><a href="/faq.html">FAQ</a></li>
+      <li><a href="/contact.html">Contact</a></li>
       <li class="nav-search"><a href="https://www.lametrohomefinder.com/team/brian-grushkin" target="_blank" rel="noopener">Search Homes</a></li>
     </ul>
-    <a class="nav-cta" href="contact.html">Get In Touch</a>
+    <a class="nav-cta" href="/contact.html">Get In Touch</a>
   </div>
 </nav>
 
@@ -58,12 +58,12 @@
   <div class="footer-inner">
     <p class="foot-logo">LA Based Agent</p>
     <nav class="foot-nav">
-      <a href="buyers.html">Buyers</a>
-      <a href="sellers.html">Sellers</a>
-      <a href="blog.html">Info Hub</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="author.html">About the Author</a>
+      <a href="/buyers.html">Buyers</a>
+      <a href="/sellers.html">Sellers</a>
+      <a href="/blog.html">Info Hub</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/author.html">About the Author</a>
       <a href="https://www.instagram.com/labasedagent" target="_blank" rel="noopener">@labasedagent</a>
       <a href="https://www.exprealty.com" target="_blank" rel="noopener">eXp Realty of Greater Los Angeles, Inc.</a>
     </nav>
@@ -71,7 +71,7 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="/main.js"></script>
 <script>
 // Get post slug from URL: /post/?slug=my-post-title
 function getSlug() {
@@ -96,7 +96,7 @@ function parseFrontMatter(text) {
 async function loadPost() {
   const slug = getSlug();
   if (!slug) {
-    document.getElementById('postMain').innerHTML = '<div class="post-loading">No post specified. <a href="blog.html">Go back to Info Hub</a></div>';
+    document.getElementById('postMain').innerHTML = '<div class="post-loading">No post specified. <a href="/blog.html">Go back to Info Hub</a></div>';
     return;
   }
 
@@ -129,16 +129,16 @@ async function loadPost() {
         ${marked.parse(content)}
       </div>
       <div class="post-author-strip">
-        <img src="your-hero-photo.jpg" alt="Brian Grushkin" class="author-thumb"/>
+        <img src="/your-hero-photo.jpg" alt="Brian Grushkin" class="author-thumb"/>
         <div class="author-strip-text">
           <span class="author-strip-label">Written by</span>
-          <a href="author.html" class="author-strip-name">Brian Grushkin</a>
+          <a href="/author.html" class="author-strip-name">Brian Grushkin</a>
           <span class="author-strip-bio">Licensed CA real estate agent | CA DRE #02169261 | eXp Realty of Greater Los Angeles, Inc.</span>
         </div>
       </div>
       <section class="mini-cta">
         <p>Questions about buying or selling in Los Angeles?</p>
-        <a class="btn-ink" href="contact.html">Get In Touch</a>
+        <a class="btn-ink" href="/contact.html">Get In Touch</a>
       </section>`;
 
     document.getElementById('postMain').innerHTML = html;
@@ -160,7 +160,7 @@ async function loadPost() {
     document.head.appendChild(s);
 
   } catch(err) {
-    document.getElementById('postMain').innerHTML = '<div class="post-loading">Article not found. <a href="blog.html">Go back to Info Hub</a></div>';
+    document.getElementById('postMain').innerHTML = '<div class="post-loading">Article not found. <a href="/blog.html">Go back to Info Hub</a></div>';
   }
 }
 
