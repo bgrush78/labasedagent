@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title id="postTitle">Loading... | Your Brand Name</title>
+<title id="postTitle">Loading... | LA Based Agent</title>
 <meta name="description" id="postDesc" content=""/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -33,7 +33,7 @@
 
 <nav id="nav">
   <div class="nav-inner">
-    <a class="logo" href="index.html">Your<span>Brand</span>Name</a>
+    <a class="logo" href="index.html">LA<span>Based</span>Agent</a>
     <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </button>
@@ -44,7 +44,7 @@
       <li><a href="blog.html" class="active">Info Hub</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li class="nav-search"><a href="https://yourhomesearchlink.example.com/" target="_blank" rel="noopener">Search Homes</a></li>
+      <li class="nav-search"><a href="https://www.lametrohomefinder.com/team/brian-grushkin" target="_blank" rel="noopener">Search Homes</a></li>
     </ul>
     <a class="nav-cta" href="contact.html">Get In Touch</a>
   </div>
@@ -56,7 +56,7 @@
 
 <footer>
   <div class="footer-inner">
-    <p class="foot-logo">Your Brand Name</p>
+    <p class="foot-logo">LA Based Agent</p>
     <nav class="foot-nav">
       <a href="buyers.html">Buyers</a>
       <a href="sellers.html">Sellers</a>
@@ -64,10 +64,10 @@
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
       <a href="author.html">About the Author</a>
-      <a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener">@YourBrandName</a>
-      <a href="https://www.yourbrokerage.com" target="_blank" rel="noopener">Your Brokerage Name</a>
+      <a href="https://www.instagram.com/labasedagent" target="_blank" rel="noopener">@labasedagent</a>
+      <a href="https://www.exprealty.com" target="_blank" rel="noopener">eXp Realty of Greater Los Angeles, Inc.</a>
     </nav>
-    <p class="foot-dre">Your Name &nbsp;|&nbsp; [Your State] DRE #[Your License Number] &nbsp;|&nbsp; Your Brokerage &nbsp;|&nbsp; Equal Housing Opportunity &nbsp;|&nbsp; &copy; 2026</p>
+    <p class="foot-dre">Brian Grushkin &nbsp;|&nbsp; CA DRE #02169261 &nbsp;|&nbsp; eXp Realty of Greater Los Angeles, Inc., The Borges Team &nbsp;|&nbsp; Equal Housing Opportunity &nbsp;|&nbsp; &copy; 2026</p>
   </div>
 </footer>
 
@@ -108,7 +108,7 @@ async function loadPost() {
     const { data, content } = parseFrontMatter(text);
 
     // Update page title and meta
-    document.getElementById('postTitle').textContent = `${data.title || 'Article'} | Your Brand Name`;
+    document.getElementById('postTitle').textContent = `${data.title || 'Article'} | LA Based Agent`;
     document.getElementById('postDesc').setAttribute('content', data.excerpt || '');
 
     // Format date
@@ -123,21 +123,21 @@ async function loadPost() {
       <section class="post-hero">
         <p class="eyebrow">${data.category || 'Info Hub'}</p>
         <h1>${data.title || ''}</h1>
-        <p class="post-meta">By Your Name &nbsp;|&nbsp; ${dateStr}</p>
+        <p class="post-meta">By Brian Grushkin &nbsp;|&nbsp; ${dateStr}</p>
       </section>
       <div class="post-body">
         ${marked.parse(content)}
       </div>
       <div class="post-author-strip">
-        <img src="your-hero-photo.jpg" alt="Your Name" class="author-thumb"/>
+        <img src="your-hero-photo.jpg" alt="Brian Grushkin" class="author-thumb"/>
         <div class="author-strip-text">
           <span class="author-strip-label">Written by</span>
-          <a href="author.html" class="author-strip-name">Your Name</a>
-          <span class="author-strip-bio">Licensed CA real estate agent | [Your State] DRE #[Your License Number] | 20+ years in marketing</span>
+          <a href="author.html" class="author-strip-name">Brian Grushkin</a>
+          <span class="author-strip-bio">Licensed CA real estate agent | CA DRE #02169261 | eXp Realty of Greater Los Angeles, Inc.</span>
         </div>
       </div>
       <section class="mini-cta">
-        <p>Questions about buying or selling in the [Your Region]?</p>
+        <p>Questions about buying or selling in Los Angeles?</p>
         <a class="btn-ink" href="contact.html">Get In Touch</a>
       </section>`;
 
@@ -150,8 +150,8 @@ async function loadPost() {
       "headline": data.title || '',
       "description": data.excerpt || '',
       "datePublished": data.date || '',
-      "author": {"@id": "https://yourdomain.com/author.html#person"},
-      "publisher": {"@id": "https://yourdomain.com/#agent"},
+      "author": {"@id": "https://labasedagent.com/author.html#person"},
+      "publisher": {"@id": "https://labasedagent.com/#agent"},
       "url": window.location.href
     };
     const s = document.createElement('script');

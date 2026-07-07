@@ -30,7 +30,7 @@ During that window, a licensed inspector goes through the property top to bottom
 
 **The appraisal contingency protects you if the home does not appraise for at least the price you agreed to pay.**
 
-Your lender requires an appraisal to confirm the home is actually worth what they are loaning you to buy it. If the appraisal comes back lower than your offer, you have a gap to deal with. There are a few ways to handle it: renegotiate the price down to the appraised value, make up the difference yourself in cash, or cancel the contract. This contingency carries real weight in the [Your Region] market, since competitive offers can push a price above what recent comparable sales actually support.
+Your lender requires an appraisal to confirm the home is actually worth what they are loaning you to buy it. If the appraisal comes back lower than your offer, you have a gap to deal with. There are a few ways to handle it: renegotiate the price down to the appraised value, make up the difference yourself in cash, or cancel the contract. This contingency carries real weight in the Los Angeles market, since competitive offers can push a price above what recent comparable sales actually support.
 
 ## Financing Contingency (Loan Contingency)
 
@@ -62,7 +62,7 @@ It is one of the most skipped contingencies, and one of the more important ones 
 
 ## What Does It Mean to Waive a Contingency?
 
-Waiving a contingency means giving up the protection it provides. This is a big choice to make, and typically made to make an offer more competitive. In a multiple offer situation, still very real in [Your City], [Nearby City], and most of the [Your Region], buyers sometimes waive their appraisal, financing, or even inspection contingency to look like the cleanest, most certain offer on the table.
+Waiving a contingency means giving up the protection it provides. This is a big choice to make, and typically made to make an offer more competitive. In a multiple offer situation, still very real in Los Angeles and most of Southern California, buyers sometimes waive their appraisal, financing, or even inspection contingency to look like the cleanest, most certain offer on the table.
 
 Here is the honest version. Waiving the appraisal contingency means committing to pay full price even if the home appraises lower. Waiving the financing contingency means that if your loan falls through later, you risk losing your deposit with no way back. Waiving inspection means accepting the property's condition completely unknown.
 
@@ -74,7 +74,7 @@ If you are selling, contingencies are one of the biggest factors in deciding whi
 
 An offer at a slightly higher price with a sale-of-home contingency and a thin financing letter can carry more risk than a slightly lower offer that is clean: strong proof of funds, a solid pre-approval, and contingencies that are reasonable rather than open-ended. Evaluating offers is partly about reading between the lines on how likely each one is to actually close, not just how good it looks on paper.
 
-This is honestly where my marketing background ends up mattering as much as my real estate license. Comparing offers is part negotiation, part translation. My job is turning a stack of paperwork into a clear picture you can actually make a decision from.
+This is honestly where my background in financial consulting ends up mattering as much as my real estate license. Comparing offers is part negotiation, part translation. My job is turning a stack of paperwork into a clear picture you can actually make a decision from.
 
 ## Frequently Asked Questions
 
