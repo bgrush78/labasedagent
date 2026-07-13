@@ -458,6 +458,73 @@ em { font-style: italic; color: var(--terracotta); }
 
 .about-ph { position: absolute; inset: 0; background: #DCC9A0; }
 
+/* ── RECENT SALES GALLERY (replaces single about-image) ── */
+
+.sales-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  background: var(--border);
+}
+
+.sale-card {
+  position: relative;
+  overflow: hidden;
+  background: #DCC9A0;
+}
+
+.sale-card-ph {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.sale-tag {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  z-index: 2;
+  background: var(--teal);
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.55rem;
+}
+
+.sale-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(250, 245, 234, 0.93);
+  backdrop-filter: blur(4px);
+  padding: 0.55rem 0.7rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.sale-address {
+  font-size: 0.72rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.sale-price {
+  font-size: 0.68rem;
+  color: var(--terracotta);
+  letter-spacing: 0.03em;
+}
+
 .about-content {
   padding: 4rem 3rem;
   display: flex;
