@@ -1,1 +1,7 @@
 /blog/:slug  /post.html?slug=:slug  200
+/author   /author.html   301!
+/buyers   /buyers.html   301!
+/sellers  /sellers.html  301!
+/blog     /blog.html     301!
+/faq      /faq.html      301!
+/contact  /contact.html  301!
